@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body{
+  font-family: "Lato";
+  font-size: 16px;
+}
+
 header {
   background: blue;
   height: 70px;
@@ -57,18 +62,48 @@ a:hover{
 
 .relative {
   position: relative;
+  border: 1px solid purple;
 }
 
-.dropdown {
+
+.dropdown-4 {
   display: none;
   position: absolute;
   top: 50px;
   right: 150px;
+  width: 180px;
+  height: 350px;
+  background: red;
+  border-radius: 10px;
+}
+.dropdown-4.active {
+  display: block;
+}
+
+.dropdown-3 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 250px;
   width: 150px;
   height: 350px;
   background: red;
+  border-radius: 10px;
+}
+.dropdown-3.active {
+  display: block;
 }
 
-.dropdown .active {
+.dropdown-2 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 350px;
+  width: 150px;
+  height: 350px;
+  background: red;
+  border-radius: 10px;
+}
+.dropdown-2.active {
   display: block;
 }
