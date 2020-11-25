@@ -1,30 +1,30 @@
 $(document).ready(
   function() {
-    $(".relative").mouseenter(
+    $("li").mouseenter(
       function() {
-        $(this).next().toggleClass("active");
+        $(this).children().last().toggleClass("active");
       }
     );
-    $(".relative").mouseleave(
+    $("li").mouseleave(
       function() {
-        $(this).next().toggleClass("active");
+        $(this).children().last().toggleClass("active");
       }
     );
   }
 );
 
 
-      // mouseover
+      // click
 
-// * $(document).ready(
-//   function() {
-//     $(".relative").mouseover(
-//       function() {
-//         $(this).next().toggleClass("active");
-//       }
-//     );
-//   }
-// );
+      // $(document).ready(
+      //   function() {
+      //     $("li").click(
+      //       function() {
+      //         $(this).children().last().toggleClass("active");
+      //       }
+      //     );
+      //   }
+      // );
 
 
 
