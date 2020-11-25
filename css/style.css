@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: blue;
+  height: 70px;
+  line-height: 70px;
+  padding-right: 50px;
+}
+
+#logo {
+  font-size: 30px;
+}
+
+.list-left{
+  list-style: none;
+}
+
+.list-left li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.list-right{
+  list-style: none;
+}
+
+.list-right li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+a:hover{
+  color: black
+}
+
+.relative {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  width: 150px;
+  height: 350px;
+  background: red;
+}
+
+.dropdown .active {
+  display: block;
+}
