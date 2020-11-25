@@ -1,6 +1,11 @@
 $(document).ready(
   function() {
-    $(".relative").click(
+    $(".relative").mouseenter(
+      function() {
+        $(this).next().toggleClass("active");
+      }
+    );
+    $(".relative").mouseleave(
       function() {
         $(this).next().toggleClass("active");
       }
