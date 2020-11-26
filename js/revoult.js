@@ -1,30 +1,31 @@
+// $(document).ready(
+//   function() {
+//     $("li").mouseenter(
+//       function() {
+//         $(this).children().last().toggleClass("active");
+//       }
+//     );
+//     $("li").mouseleave(
+//       function() {
+//         $(this).children().last().toggleClass("active");
+//       }
+//     );
+//   }
+// );
+//
+
+      // click
+
 $(document).ready(
-  function() {
-    $("li").mouseenter(
+   function() {
+     $("li").click(
       function() {
-        $(this).children().last().toggleClass("active");
-      }
-    );
-    $("li").mouseleave(
-      function() {
+        $(this).siblings("li").children().removeClass("active");
         $(this).children().last().toggleClass("active");
       }
     );
   }
 );
-
-
-      // click
-
-      // $(document).ready(
-      //   function() {
-      //     $("li").click(
-      //       function() {
-      //         $(this).children().last().toggleClass("active");
-      //       }
-      //     );
-      //   }
-      // );
 
 
 
